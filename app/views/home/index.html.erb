@@ -1,0 +1,14 @@
+<div id='map' class='dark' style="position:absolute; top:0; bottom:0; width:100%;"></div>
+
+<script type='text/javascript'>
+
+  L.mapbox.accessToken = 'pk.eyJ1IjoiZGVlcGFsaWNoYXVkaGFyeSIsImEiOiJjaWkxejZ5ZDQwMGdkdDhtMGJqN2NmajU0In0.tpfMon92jnu9Y8ykQcOAGg';
+  var map = L.mapbox.map('map', 'deepalichaudhary.odc0ihh0').setView([40, -74.50], 9);
+
+
+var geocoderControl = L.mapbox.geocoderControl('mapbox.places');
+geocoderControl.addTo(map);
+
+$('#map').show();
+map.invalidateSize();
+</script>
