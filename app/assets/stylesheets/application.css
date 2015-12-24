@@ -12,3 +12,24 @@
 *= require mapbox
  *= require_tree .
  */
+
+#search {
+    background-color: white;
+    font-size: 41;
+    position: fixed;
+    z-index: 9801 !important;
+    margin-left: 42px;
+}
+
+#search_button{
+	margin-left:280px;
+	position: fixed;
+    z-index: 9801 !important;
+}
+
+#map{
+	position:absolute; 
+	top:0;
+	bottom:0;
+	width:100%;
+}
